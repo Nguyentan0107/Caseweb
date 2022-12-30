@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="CssWebCase.css">
+</head>
+<body>
+<!--Meunu đầu trang///////////////////////////////////////////////////////////-->
+<div class="header">
+    <div class="header_inner">
+        <div class="logo"><img src="https://cdn.codegym.vn/wp-content/uploads/2019/02/Logo.png" alt=""> </div>
+        <ul class="menu">
+            <li class="menu_item"><a href="CartProduct.html" class="menu_linh">Cart</a></li>
+            <li class="menu_item"><a id="totalcartlink" class="menu_linh"></a></li>
+            <li class="menu_item"><a href="" class="menu_linh">Pay</a></li>
+            <li class="menu_item"><a id="totallink" class="menu_linh">$</a></li>
+        </ul>
+    </div>
+</div>
+<!--Kết thúc menu//////////////////////////////////////////////////////////////////-->
+
+<!--HIỂN THỊ SẢN PHẨM//////////////////////////////////////////////////////////////-->
+<section class="">
+    <div class="djndiv">
+        <div class="abcd" id="showproduchere"></div>
+    </div>
+</section>
+<!--KẾT THÚC HIỂN THỊ SẢN PHẨM/////////////////////////////////////////////////////-->
+
+<!--HIỂN THỊ CART(GIỎ HÀNG)////////////////////////////////////////////////////////-->
+    <table style="width:100%;height:300px" class="table">
+        <tr><td>
+            <button onclick="showCart()">Hiển thị giỏ hàng</button></td>
+        </tr>
+        <tr>
+            <td>Số Lượng</td>
+            <td>Thành Tiền</td>
+        </tr>
+        <tr>
+            <td><div id="showtotalquantity" class="Số lượng"></div></td>
+            <td><div id="showtotalprice" class="Tổng tiền"></div></td>
+        </tr>
+        <tr>
+            <div id="showcart" class="giohang"></div>
+        </tr>
+    </table>
+<!--KẾT THÚC HIỂN THỊ CART(GIỎ HÀNG)//////////////////////////////////////////////////////-->
+
+<!--KHU VỰC LIÊN KẾT TRANG JS AND CSS//////////////////////////////////////////////////-->
+<script src="jsWebCase.js"></script>
+<script src="manageProductCase.js"></script>
+<!--KẾT THÚC KHU VỰC LIÊN KẾT TRANG JS AND CSS/////////////////////////////////////////-->
+</body>
+</html>
